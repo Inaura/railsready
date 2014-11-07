@@ -4,7 +4,7 @@ sudo apt-get -y install zsh nodejs
 sudo apt-get -y install zlib1g-dev libreadline6-dev libyaml-dev ruby-dev
 sudo apt-get -y install wget curl build-essential clang bison openssl zlib1g libxslt1.1 libssl-dev libxslt1-dev libxml2 libffi-dev libyaml-dev libxslt-dev autoconf libc6-dev libreadline6-dev zlib1g-dev libcurl4-openssl-dev libtool
 sudo apt-get -y install libpq-dev
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get -y install postgresql postgresql-contrib
 
 #remove original ruby
 sudo apt-get -y remove ruby
