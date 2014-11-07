@@ -37,8 +37,9 @@ echo "  PassengerRoot /usr/local/lib/ruby/gems/2.1.0/gems/passenger-4.0.53" >> /
 echo "  PassengerRuby  /usr/local/bin/ruby" >> /etc/apache2/apache2.conf
 echo "ServerName \"localhost\"" >> /etc/apache2/apache2.conf
 
-echo "<VirtualHost *:3000>
+echo "<VirtualHost *:80>
     DocumentRoot /var/www/inaura/public
+    RailsEnv production
     <Directory /var/www/inaura/public>
       Options Indexes FollowSymLinks
       AllowOverride None
