@@ -4,7 +4,7 @@
 #
 ###To run:
 
-  * `wget --no-check-certificate https://raw.githubusercontent.com/bemyeyes/railsready/master/railsready.sh && bash railsready.sh`
+  * `wget --no-check-certificate https://raw.githubusercontent.com/inaura/railsready/master/railsready.sh && bash railsready.sh`
 
 
 
