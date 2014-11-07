@@ -4,12 +4,15 @@ sudo apt-get -y install zsh nodejs
 sudo apt-get -y install zlib1g-dev libreadline6-dev libyaml-dev ruby-dev
 sudo apt-get -y install wget curl build-essential clang bison openssl zlib1g libxslt1.1 libssl-dev libxslt1-dev libxml2 libffi-dev libyaml-dev libxslt-dev autoconf libc6-dev libreadline6-dev zlib1g-dev libcurl4-openssl-dev libtool
 sudo apt-get -y install libpq-dev
+
 #remove original ruby
 sudo apt-get -y remove ruby
 apt-get -y install apache2-mpm-worker
 apt-get -y install apache2-threaded-dev
 apt-get -y install libapr1-dev
 apt-get -y install libaprutil1-dev
+
+unset INSTALL
 cd /tmp
 wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.3.tar.gz
 tar -xvzf ruby-2.1.3.tar.gz
