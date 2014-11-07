@@ -1,4 +1,8 @@
-# Create a 1024 MB SWAP space sudo dd if=/dev/zero of=/swap bs=1M count=1024 sudo mkswap /swap sudo swapon /swap
+# Create a 1024 MB SWAP space 
+dd if=/dev/zero of=/swap bs=1M count=1024 
+mkswap /swap 
+swapon /swap
+
 apt-get -y update
 apt-get -y install zsh nodejs
 apt-get -y install zlib1g-dev libreadline6-dev libyaml-dev ruby-dev
