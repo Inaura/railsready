@@ -11,9 +11,9 @@ apt-get -y install apache2-threaded-dev
 apt-get -y install libapr1-dev
 apt-get -y install libaprutil1-dev
 cd /tmp
-wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz
-tar -xvzf ruby-2.1.2.tar.gz
-cd ruby-2.1.2/
+wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.3.tar.gz
+tar -xvzf ruby-2.1.3.tar.gz
+cd ruby-2.1.3/
 ./configure --prefix=/usr/local
 make
 sudo make install
