@@ -1,13 +1,13 @@
-sudo -i
-sudo apt-get -y update
-sudo apt-get -y install zsh nodejs
-sudo apt-get -y install zlib1g-dev libreadline6-dev libyaml-dev ruby-dev
-sudo apt-get -y install wget curl build-essential clang bison openssl zlib1g libxslt1.1 libssl-dev libxslt1-dev libxml2 libffi-dev libyaml-dev libxslt-dev autoconf libc6-dev libreadline6-dev zlib1g-dev libcurl4-openssl-dev libtool
-sudo apt-get -y install libpq-dev
-sudo apt-get -y install postgresql postgresql-contrib
+# Create a 1024 MB SWAP space sudo dd if=/dev/zero of=/swap bs=1M count=1024 sudo mkswap /swap sudo swapon /swap
+apt-get -y update
+apt-get -y install zsh nodejs
+apt-get -y install zlib1g-dev libreadline6-dev libyaml-dev ruby-dev
+apt-get -y install wget curl build-essential clang bison openssl zlib1g libxslt1.1 libssl-dev libxslt1-dev libxml2 libffi-dev libyaml-dev libxslt-dev autoconf libc6-dev libreadline6-dev zlib1g-dev libcurl4-openssl-dev libtool
+apt-get -y install libpq-dev
+apt-get -y install postgresql postgresql-contrib
 
 #remove original ruby
-sudo apt-get -y remove ruby
+apt-get -y remove ruby
 apt-get -y install apache2-mpm-worker
 apt-get -y install apache2-threaded-dev
 apt-get -y install libapr1-dev
@@ -20,10 +20,10 @@ tar -xvzf ruby-2.1.3.tar.gz
 cd ruby-2.1.3/
 ./configure --prefix=/usr/local
 make
-sudo make install
+make install
 gem update --system --no-ri --no-rdoc
 gem install bundler passenger rails--no-ri --no-rdoc -f
-sudo locale-gen en_GB.UTF-8
+locale-gen en_GB.UTF-8
 passenger-install-apache2-module --auto
 
 rm  /etc/apache2/sites-enabled/000-default.conf
