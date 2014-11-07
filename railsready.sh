@@ -39,8 +39,10 @@ echo "<VirtualHost *:3000>
       AllowOverride None
       Require all granted
     </Directory>
-</VirtualHost>" >> /etc/apache2/sites-enabled/inaura.conf
+</VirtualHost>" >> /etc/apache2/sites-available/inaura.conf
 
+ln -s /etc/apache2/sites-available/inaura.conf /etc/apache2/sites-enabled/inaura.conf
+echo "Listen 3000" >>/etc/apache2/ports.conf
 
 
 cd /var/www/inaura
