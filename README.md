@@ -1,4 +1,4 @@
-#Sinatra Ready
+#Rails Ready
 ###Ruby and rails setup script for Ubuntu
 
 #
